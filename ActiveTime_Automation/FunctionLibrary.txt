@@ -1,0 +1,209 @@
+'==================================================================================================================================================================
+'Library Name                :        Click Function Library
+
+
+'Description                 :        used to Click the desired fields in a Page/screen
+
+
+'Author                      :        RAJULAPATI
+
+
+'Date                        :        07-05-2016 13:13:23
+
+
+'Last Modified By            :        RAJULAPATI
+
+
+'Comments                    :
+'==================================================================================================================================================================
+
+
+Function ActiveTime_Login_Page_Login_Click()
+
+'***** Sync
+
+Browser("Br_ActiveTime").Page("ActiveTime_Login_Page").Sync
+
+'***** Set Object Hierarchy
+
+  Set ObjHierarchy = Browser("Br_ActiveTime").Page("ActiveTime_Login_Page")
+
+'***** Click on Login
+
+  If ObjHierarchy.Link("Login").Exist Then
+
+       If ObjHierarchy.Link("Login").GetROProperty("disabled") = 0 Then
+
+            ObjHierarchy.Link("Login").Click
+
+       End If
+
+  End If
+
+set ObjHierarchy = Nothing
+
+End Function
+
+'==================================================================================================================================================================
+Function ActiveTime_HomePage_Time-Track_Click()
+
+'***** Sync
+
+Browser("Br_ActiveTime").Page("ActiveTime_HomePage").Sync
+
+'***** Set Object Hierarchy
+
+  Set ObjHierarchy = Browser("Br_ActiveTime").Page("ActiveTime_HomePage")
+
+'***** Click on Time-Track
+
+  If ObjHierarchy.WebElement("Time-Track").Exist Then
+
+       If ObjHierarchy.WebElement("Time-Track").GetROProperty("disabled") = 0 Then
+
+            ObjHierarchy.WebElement("Time-Track").Click
+
+       End If
+
+  End If
+
+set ObjHierarchy = Nothing
+
+End Function
+
+'==================================================================================================================================================================
+Function ActiveTime_HomePage_Work Schedule_Click()
+
+'***** Sync
+
+Browser("Br_ActiveTime").Page("ActiveTime_HomePage").Sync
+
+'***** Set Object Hierarchy
+
+  Set ObjHierarchy = Browser("Br_ActiveTime").Page("ActiveTime_HomePage")
+
+'***** Click on Work Schedule
+
+  If ObjHierarchy.Link("Work Schedule").Exist Then
+
+       If ObjHierarchy.Link("Work Schedule").GetROProperty("disabled") = 0 Then
+
+            ObjHierarchy.Link("Work Schedule").Click
+
+       End If
+
+  End If
+
+set ObjHierarchy = Nothing
+
+End Function
+
+'==================================================================================================================================================================
+Function ActiveTime_HomePage_Users_Click()
+
+'***** Sync
+
+Browser("Br_ActiveTime").Page("ActiveTime_HomePage").Sync
+
+'***** Set Object Hierarchy
+
+  Set ObjHierarchy = Browser("Br_ActiveTime").Page("ActiveTime_HomePage")
+
+'***** Click on Users
+
+  If ObjHierarchy.Link("Users").Exist Then
+
+       If ObjHierarchy.Link("Users").GetROProperty("disabled") = 0 Then
+
+            ObjHierarchy.Link("Users").Click
+
+       End If
+
+  End If
+
+set ObjHierarchy = Nothing
+
+End Function
+
+'==================================================================================================================================================================
+Function ActiveTime_HomePage_Tasks_Click()
+
+'***** Sync
+
+Browser("Br_ActiveTime").Page("ActiveTime_HomePage").Sync
+
+'***** Set Object Hierarchy
+
+  Set ObjHierarchy = Browser("Br_ActiveTime").Page("ActiveTime_HomePage")
+
+'***** Click on Tasks
+
+  If ObjHierarchy.Link("Tasks").Exist Then
+
+       If ObjHierarchy.Link("Tasks").GetROProperty("disabled") = 0 Then
+
+            ObjHierarchy.Link("Tasks").Click
+
+       End If
+
+  End If
+
+set ObjHierarchy = Nothing
+
+End Function
+
+'==================================================================================================================================================================
+Function ActiveTime_HomePage_Settings_Click()
+
+'***** Sync
+
+Browser("Br_ActiveTime").Page("ActiveTime_HomePage").Sync
+
+'***** Set Object Hierarchy
+
+  Set ObjHierarchy = Browser("Br_ActiveTime").Page("ActiveTime_HomePage")
+
+'***** Click on Settings
+
+  If ObjHierarchy.Link("Settings").Exist Then
+
+       If ObjHierarchy.Link("Settings").GetROProperty("disabled") = 0 Then
+
+            ObjHierarchy.Link("Settings").Click
+
+       End If
+
+  End If
+
+set ObjHierarchy = Nothing
+
+End Function
+
+'==================================================================================================================================================================
+Function ActiveTime_HomePage_Reports_Click()
+
+'***** Sync
+
+Browser("Br_ActiveTime").Page("ActiveTime_HomePage").Sync
+
+'***** Set Object Hierarchy
+
+  Set ObjHierarchy = Browser("Br_ActiveTime").Page("ActiveTime_HomePage")
+
+'***** Click on Reports
+
+  If ObjHierarchy.Link("Reports").Exist Then
+
+       If ObjHierarchy.Link("Reports").GetROProperty("disabled") = 0 Then
+
+            ObjHierarchy.Link("Reports").Click
+
+       End If
+
+  End If
+
+set ObjHierarchy = Nothing
+
+End Function
+
+'==================================================================================================================================================================
